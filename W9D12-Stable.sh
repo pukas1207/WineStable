@@ -6,10 +6,10 @@ sudo dpkg --add-architecture i386
 #Downloads and adds the repository key
 sudo mkdir -pm755 /etc/apt/keyrings
 
-sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+sudo wget -O /etc/apt/keyrings/winehq-archive.key http://dl.winehq.org/wine-builds/winehq.key
 
 #This downloads the WineHQ sources file
-sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
+sudo wget -NP /etc/apt/sources.list.d/ http://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
 
 #This updates the package information
 sudo apt update
